@@ -1,0 +1,9 @@
+com\algo\inc\App.class
+com\algo\inc\WebDownloadManager.class
+com\algo\inc\model\LinkRecord.class
+com\algo\inc\util\URLValidator.class
+com\algo\inc\downloader\WebsiteDownloader.class
+com\algo\inc\util\TerminalUI.class
+com\algo\inc\model\WebsiteReport.class
+com\algo\inc\database\DatabaseManager.class
+com\algo\inc\model\DownloadReport.class
