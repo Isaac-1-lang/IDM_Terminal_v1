@@ -131,23 +131,23 @@ link-local/
 ═══════════════════════════════════════════
 Enter your choice: 1
 
-📥 WEBSITE DOWNLOAD
+ WEBSITE DOWNLOAD
 ─────────────────────────────────────────
 Enter website URL: http://example.com
 ✓ URL validated: http://example.com
 Enter download directory (or press Enter for current directory): 
 ✓ Download directory: C:\Users\user\IdeaProjects\downloads
 
-🚀 Starting download...
+ Starting download...
 
-📁 Created directory: C:\Users\user\IdeaProjects\downloads\example.com
-🌐 Downloading from: http://example.com
+ Created directory: C:\Users\user\IdeaProjects\downloads\example.com
+ Downloading from: http://example.com
 
-📄 Downloading homepage: index.html
+ Downloading homepage: index.html
 ✓ Homepage downloaded: 1.23 KB in 145 ms
 ```
 
-## ⚡ Quick Commands Reference
+##  Quick Commands Reference
 
 ### Build Only:
 ```bash
@@ -224,11 +224,11 @@ mvn -version   # Should be 3.6+
 ### Issue 6: Cannot create directories
 **Solution:** Run as administrator or check permissions
 
-## 🎉 Success!
+##  Success!
 
 If you see the main menu, congratulations! Your Web Download Manager is ready to use.
 
-## 📚 Next Steps
+##  Next Steps
 
 1. Try downloading different websites
 2. View the download reports
@@ -236,10 +236,10 @@ If you see the main menu, congratulations! Your Web Download Manager is ready to
 4. Modify the code to add features
 5. Test error handling with invalid URLs
 
-## 🆘 Need Help?
+##  Need Help?
 
 Check the README.md for detailed documentation or contact your instructor.
 
 ---
 
-**Happy Downloading! 🚀**
+**Happy Downloading! **
