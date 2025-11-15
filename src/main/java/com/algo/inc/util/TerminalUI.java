@@ -272,23 +272,87 @@ public class TerminalUI {
     }
     
     /**
-     * Print banner/header
+     * Print ASCII art banner
      */
     public static void printBanner() {
         System.out.println();
-        System.out.println(color("╔══════════════════════════════════════════════════════════════╗", BRIGHT_CYAN));
-        System.out.println(color("║", BRIGHT_CYAN) + "  " + 
-            bold(color("WEB DOWNLOAD MANAGER", BRIGHT_WHITE)) + 
-            color("  │  ", DIM) + 
-            color("v1.0.0", BRIGHT_BLACK) + 
-            "  " + color("║", BRIGHT_CYAN));
-        System.out.println(color("║", BRIGHT_CYAN) + "  " + 
-            color("Algorithm Inc.", BRIGHT_BLUE) + 
-            " " + color("•", DIM) + " " + 
-            color("Link-local Downloader", DIM) + 
-            "  " + color("║", BRIGHT_CYAN));
-        System.out.println(color("╚══════════════════════════════════════════════════════════════╝", BRIGHT_CYAN));
+        printFaceArt();
         System.out.println();
+        printAsciiArt();
+        System.out.println();
+        System.out.println(color("  " + "Algorithm Inc.", BRIGHT_BLUE) + 
+                         color(" • ", DIM) + 
+                         color("Link-local Downloader", BRIGHT_CYAN) + 
+                         color("  │  ", DIM) + 
+                         color("v1.0.0", BRIGHT_BLACK));
+        System.out.println();
+    }
+    
+    /**
+     * Print the face ASCII art
+     */
+    private static void printFaceArt() {
+        String[] faceLines = {
+            "       _____       ",
+            "     .-'     '-.     ",
+            "    /           \\    ",
+            "   |  .--. .--.  |   ",
+            "   | (    Y    ) |   ",
+            "   |  '--' '--'  |   ",
+            "    \\           /    ",
+            "     '-._____.-'     ",
+            "      / /| |\\ \\      ",
+            "     /_/ |_| \\_\\     "
+        };
+        
+        // Print face with gradient colors
+        for (int i = 0; i < faceLines.length; i++) {
+            String colorToUse;
+            if (i < 3) {
+                colorToUse = BRIGHT_CYAN;
+            } else if (i < 6) {
+                colorToUse = BRIGHT_BLUE;
+            } else if (i < 9) {
+                colorToUse = BRIGHT_MAGENTA;
+            } else {
+                colorToUse = BRIGHT_YELLOW;
+            }
+            System.out.println(color(faceLines[i], colorToUse));
+        }
+    }
+    
+    /**
+     * Generate ASCII art for "LINK LOCAL"
+     * Modern, stylish design using standard characters
+     */
+    private static void printAsciiArt() {
+        String[] lines = {
+            "██╗     ██╗███╗   ██╗██╗  ██╗    ██╗      ██████╗  ██████╗ █████╗ ██╗     ",
+            "██║     ██║████╗  ██║██║ ██╔╝    ██║     ██╔═══██╗██╔════╝██╔══██╗██║     ",
+            "██║     ██║██╔██╗ ██║█████╔╝     ██║     ██║   ██║██║     ███████║██║     ",
+            "██║     ██║██║╚██╗██║██╔═██╗     ██║     ██║   ██║██║     ██╔══██║██║     ",
+            "███████╗██║██║ ╚████║██║  ██╗    ███████╗╚██████╔╝╚██████╗██║  ██║███████╗",
+            "╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝    ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝"
+        };
+        
+        // Print with vibrant colors
+        for (int i = 0; i < lines.length; i++) {
+            if (lines[i].isEmpty()) {
+                System.out.println();
+                continue;
+            }
+            String colorToUse;
+            if (i < 3) {
+                colorToUse = BRIGHT_CYAN;
+            } else if (i < 6) {
+                colorToUse = BRIGHT_BLUE;
+            } else if (i < 9) {
+                colorToUse = BRIGHT_MAGENTA;
+            } else {
+                colorToUse = BRIGHT_YELLOW;
+            }
+            System.out.println(color(lines[i], colorToUse));
+        }
     }
     
     /**
