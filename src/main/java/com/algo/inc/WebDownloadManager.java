@@ -24,7 +24,7 @@ public class WebDownloadManager {
         TerminalUI.printBanner();
         
         // Initialize database
-        TerminalUI.info("Initializing database connection...");
+        // TerminalUI.info("Initializing database connection...");
         dbManager.initializeDatabase();
         
         boolean running = true;

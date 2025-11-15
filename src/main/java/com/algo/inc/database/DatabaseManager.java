@@ -26,10 +26,10 @@ public class DatabaseManager {
      */
     public void initializeDatabase() {
         try {
-            TerminalUI.status("  Connecting", DB_HOST + ":" + DB_PORT + "/" + DB_NAME, TerminalUI.BRIGHT_CYAN);
+            // TerminalUI.status("  Connecting", DB_HOST + ":" + DB_PORT + "/" + DB_NAME, TerminalUI.BRIGHT_CYAN);
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
             createTables();
-            TerminalUI.success("Database connection established");
+            // TerminalUI.success("Database connection established");
         } catch (SQLException e) {
             TerminalUI.error("Database connection failed: " + e.getMessage());
             TerminalUI.warning("Connection URL: " + DB_URL);
@@ -63,7 +63,7 @@ public class DatabaseManager {
         try (Statement stmt = connection.createStatement()) {
             stmt.execute(createWebsitesTable);
             stmt.execute(createLinksTable);
-            TerminalUI.status("  Tables", "websites, links", TerminalUI.BRIGHT_GREEN);
+            // TerminalUI.status("  Tables", "websites, links", TerminalUI.BRIGHT_GREEN);
         }
     }
     
