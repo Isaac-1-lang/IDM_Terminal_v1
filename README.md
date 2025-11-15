@@ -242,4 +242,4 @@ Check the README.md for detailed documentation or contact your instructor.
 
 ---
 
-**Happy Downloading! 🚀**
+**Happy Downloading! **
